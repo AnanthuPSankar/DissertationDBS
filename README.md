@@ -1,8 +1,8 @@
 AI Vehicle Recommendation Tool (Irish Scenario)
 
-This project uses cost assumptions and machine learning to recommend vehicles in Ireland based on a user's budget and monthly driving distance. It predicts the 5-year Total Cost of Ownership (TCO) using both rule-based and data-driven approaches.
+This project uses cost assumptions and machine learning to recommend vehicles in Ireland based on a user's budget (the total budget, not just the downpayment or purchase price) and monthly driving distance. It predicts the 5-year Total Cost of Ownership (TCO) using both rule-based and data-driven approaches.
 
-📁 Project Structure
+**** Project Structure ****
 .
 ├── vehicles.csv                         # Raw vehicle data
 ├── tco_calculate.py                     # Calculates 5-year TCO and cost components
@@ -17,7 +17,7 @@ This project uses cost assumptions and machine learning to recommend vehicles in
 ├── stretch_recommendations_*.csv        # Outputs: vehicles slightly above budget
 
 
-⚙️ How to Run the Project
+*** How to Run the Project ***
 
 Clone the repository:
 
@@ -54,7 +54,7 @@ Affordable and stretch options are printed in the terminal
 
 Recommendations are saved as CSV files with dynamic filenames
 
-📊 Features
+***** Features *****
 
 Calculates realistic 5-year TCO (Total Cost of Ownership)
 
@@ -66,7 +66,7 @@ Dynamic user inputs (budget + distance)
 
 Saves output for easy reporting and comparison
 
-*  Irish Assumptions Used
+****  Irish Assumptions Used ****
 
 Electricity: €0.34/kWh
 
@@ -80,7 +80,7 @@ Depreciation: 35% over 5 years
 
 Default driving: 15,000 km/year (modifiable)
 
-🔍 Output Sample
+**** Output Sample ****
 
 Each run generates:
 
