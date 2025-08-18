@@ -39,4 +39,4 @@ df[text_cols] = df[text_cols].apply(lambda x: x.fillna("Unknown"))
 
 # finally, save the cleaned & normalized dataset as a new file
 df.to_csv("ai_ready_vehicle_dataset.csv", index=False)
-print("✅ AI-ready dataset saved as ai_ready_vehicle_dataset.csv")
+print("AI-ready dataset saved as ai_ready_vehicle_dataset.csv")

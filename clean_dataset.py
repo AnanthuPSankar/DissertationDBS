@@ -21,4 +21,6 @@ for col in df.select_dtypes(include=['object']).columns:
 
 # now to save my cleaned dataset
 df.to_csv("cleaned_vehicle_dataset.csv", index=False)
-print("✅ Cleaned dataset saved as cleaned_vehicle_dataset.csv")
+print("Cleaned dataset saved as cleaned_vehicle_dataset.csv") 
+
+

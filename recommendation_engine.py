@@ -104,7 +104,7 @@ rmse = root_mean_squared_error(y_test, y_pred)
 # and now to save the trained model
 joblib.dump(rf, "rf_tco_model_irish.joblib")
 
-print(f"✅ RandomForest trained (Irish rates) -- R2: {r2:.3f}, RMSE: {rmse:.2f} EUR")
+print(f"RandomForest trained (Irish rates) -- R2: {r2:.3f}, RMSE: {rmse:.2f} EUR")
 
 
 
@@ -152,33 +152,33 @@ def recommend_vehicles(budget_eur, monthly_km, stretch_pct=0.10, top_n=10):
 
 # Example usage for demonstration
 if __name__ == "__main__":
-    print("🚗 AI Vehicle Recommendation Tool (Irish Scenario)")
+    print("AI Vehicle Recommendation Tool (Irish Scenario)")
     print("--------------------------------------------------")
 
     try:
         budget = float(input("Enter your vehicle budget in EUR: "))
         monthly_km = float(input("Enter your average monthly distance (in km): "))
     except ValueError:
-        print("❌ Invalid input. Please enter numbers only.")
+        print("Invalid input. Please enter numbers only.")
         exit()
 
-    print("\n🔍 Calculating best options based on your input...\n")
+    print("\nCalculating best options based on your input...\n")
     affordable, stretch, info = recommend_vehicles(budget, monthly_km, stretch_pct=0.15, top_n=10)
 
     print("--- Recommendation Summary ---")
     print(info)
 
     if not affordable.empty:
-        print("\n✅ Affordable Options:")
+        print("\nAffordable Options:")
         print(affordable.to_string(index=False))
     else:
-        print("\n⚠️ No vehicles found within your budget.")
+        print("\nNo vehicles found within your budget.")
 
     if not stretch.empty:
-        print("\n💡 Stretch Options (within 15% over budget):")
+        print("\nStretch Options (within 15% over budget):")
         print(stretch.to_string(index=False))
     else:
-        print("\nℹ️ No stretch options found either.")
+        print("\nℹNo stretch options found either.")
 
     
     # just to save the recommendations to CSV for using in my report, along with the budget and km in the filename included automatically so that everytime I run a new scenario, a unique file is created without overwriting the existing file
@@ -188,5 +188,5 @@ if __name__ == "__main__":
     affordable.to_csv(affordable_filename, index=False)
     stretch.to_csv(stretch_filename, index=False)
 
-    print(f"\n📂 Saved recommendations as '{affordable_filename}' and '{stretch_filename}'")
+    print(f"\nSaved recommendations as '{affordable_filename}' and '{stretch_filename}'")
 

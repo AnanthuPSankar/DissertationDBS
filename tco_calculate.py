@@ -57,4 +57,4 @@ df["5yr_TCO_eur"] = (
 
 # Save to new CSV
 df.to_csv("dataset_with_tco.csv", index=False)
-print("✅ Dataset saved as dataset_with_tco.csv with new cost columns.")
+print("Dataset saved as dataset_with_tco.csv with new cost columns.")
