@@ -24,7 +24,7 @@ df.columns = (
 
 # if any unrealistic values are present, they have to be removed
 df = df[df['purchase_price_eur'] > 0]             # price must be positive
-df = df[df['electric_range_(km)'] > 0]          # range must be positive as well
+df = df[(df['electric_range_(km)'] > 0) | (df['energy'].isin(['petrol', 'diesel', 'lpg']))]    # range must be positive as well
 
 # to identify the numeric and text columns
 numeric_cols = df.select_dtypes(include=['float64', 'int64']).columns
