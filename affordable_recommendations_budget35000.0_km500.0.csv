@@ -1,0 +1,2 @@
+brand,model,veh_type,energy,power_kw,el_consumpt_whkm,fuel_consumption,electric_range_(km),purchase_price_eur,det_5yr_tco,ml_pred_5yr_tco
+Renault,Scenic E-Tech Electric,SUV,electric,160,153,0,625,16990,25686.5,30362.794000000005

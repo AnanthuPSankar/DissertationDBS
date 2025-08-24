@@ -97,7 +97,7 @@ ml_df["predicted_tco"] = y_pred
 valid_types = ["SUV", "Hatchback", "Sedan", "Crossover", "MPV", "City", "Supermini", "Saloon", "Estate", "Liftback"]
 ml_df = ml_df[ml_df["veh_type"].isin(valid_types)]
 plt.figure(figsize=(10, 6))
-sns.histplot(data=ml_df, x="predicted_tco", hue="veh_type", kde=True, bins=30, palette="tab10")
+sns.histplot(data=ml_df, x="predicted_tco", hue="veh_type", kde=True, bins=30, palette="colorblind")
 plt.title("Predicted 5-Year TCO Distribution by Vehicle Type")
 plt.xlabel("Predicted 5-Year TCO (EUR)")
 plt.ylabel("Count")

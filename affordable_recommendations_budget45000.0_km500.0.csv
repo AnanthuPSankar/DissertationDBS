@@ -1,0 +1,11 @@
+brand,model,veh_type,energy,power_kw,el_consumpt_whkm,fuel_consumption,electric_range_(km),purchase_price_eur,det_5yr_tco,ml_pred_5yr_tco
+Renault,Scenic E-Tech Electric,SUV,electric,160,153,0,625,16990,25686.5,30362.794000000005
+Fiat,500e,City,electric,87,130,0,320,25000,36500.0,38340.58299999999
+MG,ZS EV,SUV,electric,130,180,0,320,28495,41218.25,41288.488000000005
+Citroën,Ami (quadricycle),MPV,electric,6,75,0,75,28500,41225.0,41184.07899999999
+BYD,Seal,Sedan,electric,230,168,0,570,29986,43231.1,42004.689999999944
+BYD,Atto 3,SUV,electric,150,150,0,420,29995,43243.25,43657.549
+BMW,X5 xDrive45e,G5X,hybrid petrol,210,247,1,82,30000,43775.0,44116.0
+MERCEDES-BENZ,B 250 E,F2B,hybrid petrol,118,198,1,63,30000,43775.0,44250.955
+MERCEDES-BENZ,GLE 350 E 4MATIC,H1GLE,hybrid petrol,155,268,1,96,30000,43775.0,44108.8
+MERCEDES-BENZ,GLE 350 E 4MATIC COUPE,H1GLE,hybrid petrol,155,269,1,96,30000,43775.0,44108.8

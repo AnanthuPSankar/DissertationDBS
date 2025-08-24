@@ -107,10 +107,6 @@ joblib.dump(rf, "rf_tco_model_irish.joblib")
 print(f"RandomForest trained (Irish rates) -- R2: {r2:.3f}, RMSE: {rmse:.2f} EUR")
 
 
-
-
-
-
 # My vehicle recommendation function
 # this returns affordable and stretch options based on the user budget and monthly distance.
 def recommend_vehicles(budget_eur, monthly_km, stretch_pct=0.10, top_n=10):
